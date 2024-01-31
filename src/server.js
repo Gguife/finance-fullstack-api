@@ -1,6 +1,9 @@
 import express from "express";
+import useRouter from "./module/user/user.route.js";
 const app = express();
 app.use(express.json());
+
+app.use("/users", useRouter);
 
 app.get("/health", (_, res)  =>{
   return res.send("Hello World!");
