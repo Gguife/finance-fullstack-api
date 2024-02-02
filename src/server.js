@@ -1,11 +1,15 @@
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
+
 import useRouter from "./module/user/user.route.js";
+import authRouter from "./module/auth/auth.route.js";
+
 const app = express();
 app.use(express.json());
 
 app.use("/users", useRouter);
+app.use("/auth", authRouter);
 
 app.get("/health", (_, res)  =>{
   return res.send("Hello World!");
