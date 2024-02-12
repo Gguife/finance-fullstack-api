@@ -6,6 +6,7 @@ dotenv.config();
 
 import useRouter from "./module/user/user.route.js";
 import authRouter from "./module/auth/auth.route.js";
+import categoryRouter from "./module/categories/category.route.js";
 
 const app = express();
 app.use(express.json());
@@ -14,6 +15,7 @@ app.use(bearerToken());
 
 app.use("/users", useRouter);
 app.use("/auth", authRouter);
+app.use("/categories", categoryRouter);
 
 app.get("/health", (_, res)  =>{
   return res.send("Hello World!");
