@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { getAll, get, save, update, remove } from "./user.model.js";
-import { getMe } from "./user.service.js"; 
 import { authMiddleware } from "../../middleware/authMiddleware.js";
 
 const router = Router();
