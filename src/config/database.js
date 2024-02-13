@@ -1,5 +1,3 @@
-import knex from 'knex';
-
 const knexConfig = {
   client: 'mysql2',
   connection: {
