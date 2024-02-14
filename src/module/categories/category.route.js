@@ -22,7 +22,7 @@ router.post("/", authMiddleware, async (req, res) =>{
 
 router.put("/:id", authMiddleware, async(req, res) =>{
   req.body.user_id = req.user.id;
-  const data = await update(req.params.id, req.params, req.user.id);
+  const data = await update(req.params.id, req.body, req.user.id);
   return res.status(200).json({data})
 })
 
