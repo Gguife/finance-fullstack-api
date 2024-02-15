@@ -1,6 +1,6 @@
 import knex from "../../service/knex.js";
 
-const TABLE = "metas";
+const TABLE = "goals";
 
 export const getAll = (userId) =>{
   return knex(TABLE).select("*").where({"user_id": userId});
