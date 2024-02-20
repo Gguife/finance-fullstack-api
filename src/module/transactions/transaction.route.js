@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAll, get, save, update, remove } from "./goals.model.js";
+import { getAll, get, save, update, remove } from "./transaction.model.js";
 import { authMiddleware } from "../../middleware/authMiddleware.js";
 
 const router = Router();
