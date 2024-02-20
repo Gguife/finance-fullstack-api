@@ -8,6 +8,7 @@ import useRouter from "./module/user/user.route.js";
 import authRouter from "./module/auth/auth.route.js";
 import categoryRouter from "./module/categories/category.route.js";
 import goalRouter from "./module/goal/goals.route.js";
+import transactionRouter from "./module/transactions/transaction.route.js";
 
 const app = express();
 app.use(express.json());
@@ -18,6 +19,7 @@ app.use("/users", useRouter);
 app.use("/auth", authRouter);
 app.use("/categories", categoryRouter);
 app.use("/goals", goalRouter);
+app.use("/transactions", transactionRouter);
 
 app.get("/health", (_, res)  =>{
   return res.send("Hello World!");
