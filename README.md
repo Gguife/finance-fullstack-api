@@ -63,19 +63,19 @@ Here you can list the main routes of your API, and what are their expected reque
 ​
 | route               | Model     | Description                                     
 |----------------------|-----------------------------|------------------------
-| <kbd>GET /users</kbd>     | <strong>users</strong>    | See all user
+| <kbd>GET /users</kbd>     | <strong>users</strong>    | See all users
 | <kbd>POST /users</kbd>    | <strong>users</strong>    | Create user
 | <kbd>PUT /users/:id</kbd> | <strong>users</strong>    | Update user
 | <kbd>DELETE /users/:id</kbd> | <strong>users</strong>    | Remove user
-| <kbd>GET /goals</kbd>     | <strong>goals</strong>    | See all goal
+| <kbd>GET /goals</kbd>     | <strong>goals</strong>    | See all goals
 | <kbd>POST /goals</kbd>    | <strong>goals</strong>    | Create goal
 | <kbd>PUT /goals/:id</kbd> | <strong>goals</strong>    | Update goal
 | <kbd>DELETE /goals/:id</kbd> | <strong>goals</strong>    | Remove goal
-| <kbd>GET /categories</kbd>     | <strong>categories</strong>    | See all category
+| <kbd>GET /categories</kbd>     | <strong>categories</strong>    | See all categories
 | <kbd>POST /categories</kbd>    | <strong>categories</strong>    | Create category
 | <kbd>PUT /categories/:id</kbd> | <strong>categories</strong>    | Update category
 | <kbd>DELETE /categories/:id</kbd> | <strong>categories</strong>    | Remove category
-| <kbd>GET /transactions</kbd>     | <strong>transactions</strong>    | See all transaction
+| <kbd>GET /transactions</kbd>     | <strong>transactions</strong>    | See all transactions
 | <kbd>POST /transactions</kbd>    | <strong>transactions</strong>    | Create transaction
 | <kbd>PUT /transactions/:id</kbd> | <strong>transactions</strong>    | Update transaction
 | <kbd>DELETE /transactions/:id</kbd> | <strong>transactions</strong>    | Remove transaction
